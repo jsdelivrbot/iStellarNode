@@ -9,6 +9,10 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
+//app.set('view engine', 'html');
+//app.engine('html', ejs.renderFile);
+
+
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
