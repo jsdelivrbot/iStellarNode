@@ -17,8 +17,20 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-app.get('/getting-started-nodejs-heroku.ejs', function(request, response) {
+app.get('/about-me', function(request, response) {
+  response.render('pages/about-me');
+});
+
+app.get('/dev-center', function(request, response) {
+  response.render('pages/dev-center');
+});
+
+app.get('/getting-started-nodejs-heroku', function(request, response) {
   response.render('pages/getting-started-nodejs-heroku');
+});
+
+app.get('/flight-bookings', function(request, response) {
+  response.render('pages/flight-bookings');
 });
 
 app.listen(app.get('port'), function() {
