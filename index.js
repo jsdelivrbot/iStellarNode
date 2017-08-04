@@ -17,6 +17,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/getting-started-nodejs-heroku.ejs', function(request, response) {
+  response.render('pages/getting-started-nodejs-heroku');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
